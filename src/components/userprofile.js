@@ -7,6 +7,7 @@ import {USER} from "../Context/action.types"
 const UserProfile = () => {
     const location = useLocation()
     const myparams = location.state.params
+    console.log(myparams)
     const {dispatch} = useContext(UserContext)
     const user = JSON.parse(localStorage.getItem('user'))
     const [data,setData] = useState("")

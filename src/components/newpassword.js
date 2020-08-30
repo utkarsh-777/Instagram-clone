@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useHistory,useParams } from 'react-router-dom'
+import { useHistory,useParams } from 'react-router-dom'
 import M from 'materialize-css'
 import Navbar from './navbar'
 

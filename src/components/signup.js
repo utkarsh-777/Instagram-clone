@@ -13,22 +13,22 @@ const SignUp = () => {
 
     const history = useHistory()
 
-    const uploadpic = () => {
-        const data = new FormData()
-        data.append("file",photo)
-        data.append("upload_preset","Insta-clone")
-        data.append("cloud_name","dg5o9ga4k")
-        fetch(" https://api.cloudinary.com/v1_1/dg5o9ga4k/image/upload",{
-            method:'post',
-            body:data
-        }).then(res=>res.json())
-        .then(data=>{
-            setUrl(data.url)
-        })
-        .catch(err=>{
-            console.log(err)
-        })
-    }
+    // const uploadpic = () => {
+    //     const data = new FormData()
+    //     data.append("file",photo)
+    //     data.append("upload_preset","Insta-clone")
+    //     data.append("cloud_name","dg5o9ga4k")
+    //     fetch(" https://api.cloudinary.com/v1_1/dg5o9ga4k/image/upload",{
+    //         method:'post',
+    //         body:data
+    //     }).then(res=>res.json())
+    //     .then(data=>{
+    //         setUrl(data.url)
+    //     })
+    //     .catch(err=>{
+    //         console.log(err)
+    //     })
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault()
